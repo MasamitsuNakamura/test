@@ -1,11 +1,11 @@
 ```mermaid
 sequenceDiagram
-    participant User
+    participant User2
     participant Client
     participant Server
     participant Database
     
-    User->>+Client: 要求
+    User2->>+Client: 要求
     Client->>+Server: リクエスト送信
     Server->>+Database: データ問い合わせ
     Database-->>-Server: 結果返却
@@ -21,6 +21,6 @@ sequenceDiagram
         Server->>Database: 作成実行
     end
 
-    Client-->>-User: 応答
+    Client-->>-User2: 応答
 ```   
   
